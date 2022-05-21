@@ -50,8 +50,6 @@ def isOrthogonal(a):
         for j in range(0, n) :
             if (i != j and a[i][j] != 0) :
                 return False
-            if (i == j and a[i][j] != 1) :
-                return False
     
     return True
 
@@ -93,4 +91,4 @@ ortoB = makeOrto(B)
 normB = normalizeMatrix(ortoB)
 wektor = [8, 6, 2, 3, 4, 6, 6, 5]
 wektor = np.transpose(wektor)
-print(changeBase(B, A, wektor))
+print(changeBase(BT, A, wektor))
